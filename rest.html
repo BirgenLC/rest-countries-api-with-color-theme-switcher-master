@@ -9,22 +9,22 @@
   <body>
     <header>
       <h1><b>Where in the world?</b></h1>
-      <ion-icon name="moon-outline"></ion-icon>
       <button id="theme-toggle">Dark Mode</button>
     </header>
     <div class="container">
-      <ion-icon name="search-outline"></ion-icon>
       <input type="text" id="search" placeholder="Search for a country..." />
       <div id="countries"></div>
     </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <div class="filter">
+      <option value="Africa"></option>
+      <option value="Asia"></option>
+      <option value="Europe"></option>
+      <option value="America"></option>
+      <option value="Oceania"></option>
+    </div>
+    <main>
+      <div class="countries-container"></div>
+    </main>
     <script src="rest.js"></script>
   </body>
 </html>
